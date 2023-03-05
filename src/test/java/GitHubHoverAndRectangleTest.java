@@ -5,7 +5,7 @@ import com.codeborne.selenide.SelenideElement;
 
 import static com.codeborne.selenide.Selenide.*;
 
-public class GitHubHoverTest {
+public class GitHubHoverAndRectangleTest {
     private static final SelenideElement SOLUTIONS_BUTTON = $x("//button[contains(text(),'Solutions')]");
     private static final SelenideElement ENTERPRISE_BUTTON = $x("//a[contains(@data-analytics-event,'click to go to Enterprise')]");
     private static final SelenideElement TITLE = $x("//h1[contains(@class,'h1-mktg')][@style]");
@@ -24,7 +24,7 @@ public class GitHubHoverTest {
     }
 
     @Test
-    public void dragNDropRectangle(){
+    public void dragAndDropRectangle(){
         open("https://the-internet.herokuapp.com/drag_and_drop");
         Configuration.browserSize = "1920x1080";
 
